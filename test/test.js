@@ -1,4 +1,4 @@
-var req = require.context("./components", true, /^(.*\.((jsx?|tsx?)$))[^.]*$/igm);
+var req = require.context("./", true, /^(.*\.((tsx?)$))[^.]*$/igm);
 req.keys().forEach(function(key){
     req(key);
 });

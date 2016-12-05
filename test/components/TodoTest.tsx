@@ -6,7 +6,7 @@ import Todo from 'components/Todo'
 
 describe('Todo component', () => {
 
-  const todo = shallow(<Todo text={"hello"} isDone={false} onClick={()=>{}}/>)
+  const todo = shallow(<Todo text={"hello"} isDone={false} onClick={()=>{}} remove={()=>{}}/>)
 
   it('should be of type li', () => {
     expect(todo.type()).to.equal('li')

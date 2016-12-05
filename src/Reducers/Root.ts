@@ -1,4 +1,3 @@
-import {combineReducers} from 'redux'
 import {Map} from 'immutable'
 import TodosReducer from './TodosReducer'
 import VisibilityFilterReducer from './VisibilityFilterReducer'

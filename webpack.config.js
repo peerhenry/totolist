@@ -4,7 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
-  entry: './src/main',
+  entry: './src/Main',
 
   output: {
     path: './build',
@@ -20,7 +20,7 @@ module.exports = {
       containers: 'src/Containers',
       reducers: 'src/Reducers',
       components: 'src/Components',
-      actions: 'src/Actions/actions',
+      actions: 'src/Actions/Actions',
       models: 'src/Models'
     }
   },

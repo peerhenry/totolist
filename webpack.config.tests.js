@@ -17,7 +17,7 @@ module.exports = {
       containers: 'src/Containers',
       reducers: 'src/Reducers',
       components: 'src/Components',
-      actions: 'src/Actions',
+      actions: 'src/Actions/Actions',
       models: 'src/Models'
     }
   },
@@ -47,7 +47,8 @@ module.exports = {
     'react-redux': 'ReactRedux',
     'mocha': 'Mocha',
     'enzyme': 'Enzyme',
-    'chai': 'Chai'
+    'chai': 'Chai',
+    'immutable': 'Immutable'
   },
 
   devtool: "eval",
