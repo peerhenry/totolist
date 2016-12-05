@@ -9,3 +9,8 @@ export const toggle = (id: number) => ({
   type: "TODOS_TOGGLE",
   id
 })
+
+export const remove = (id: number) => ({
+  type: "TODOS_REMOVE",
+  id
+})

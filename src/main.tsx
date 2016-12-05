@@ -9,6 +9,7 @@ import {Map} from 'immutable'
 import {List} from 'immutable'
 
 import Title from 'components/Title'
+import Form from 'components/Form'
 import TodoListContainer from 'containers/TodoListContainer'
 import reducer from 'reducers/combined'
 import TodoModel from 'models/TodoModel'
@@ -31,6 +32,7 @@ const store: Store<{}> = createStore(reducer, startingState)
 const App = () => (
   <div>
     <Title/>
+    <Form/>
     <TodoListContainer/>
   </div>
 )
