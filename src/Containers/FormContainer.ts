@@ -1,5 +1,6 @@
 import {connect} from 'react-redux'
 import {add} from 'actions'
+import {requestTodos} from 'actions'
 import Form from 'components/Form'
 
 let todoInput;
@@ -16,7 +17,9 @@ const mapDispatchToProps = (dispatch) => {
         todoInput.value = ""
       }
     },
-    ajax: () => {console.log('ajax called!')},
+    ajax: () => {
+      dispatch(requestTodos)
+    },
     pass: (input) => {
       todoInput = input
     }

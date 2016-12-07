@@ -68,7 +68,7 @@
 /* 4 */
 /***/ function(module, exports) {
 
-	eval("\"use strict\";\r\nlet nextTodoId = 0;\r\nexports.add = (text) => ({\r\n    type: \"TODOS_ADD\",\r\n    id: nextTodoId++,\r\n    text\r\n});\r\nexports.toggle = (id) => ({\r\n    type: \"TODOS_TOGGLE\",\r\n    id\r\n});\r\nexports.remove = (id) => ({\r\n    type: \"TODOS_REMOVE\",\r\n    id\r\n});\r\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/Actions/Actions.ts\n// module id = 4\n// module chunks = 0\n//# sourceURL=webpack:///./src/Actions/Actions.ts?");
+	eval("\"use strict\";\r\nexports.add = (text) => ({\r\n    type: \"TODOS_ADD\",\r\n    text\r\n});\r\nexports.toggle = (id) => ({\r\n    type: \"TODOS_TOGGLE\",\r\n    id\r\n});\r\nexports.remove = (id) => ({\r\n    type: \"TODOS_REMOVE\",\r\n    id\r\n});\r\nexports.requestTodos = dispatch => {\r\n    console.log('thunky thunky!');\r\n    dispatch({ type: \"TODOS_TOGGLE\", id: 1 });\r\n};\r\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/Actions/Actions.ts\n// module id = 4\n// module chunks = 0\n//# sourceURL=webpack:///./src/Actions/Actions.ts?");
 
 /***/ },
 /* 5 */
@@ -122,7 +122,7 @@
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	eval("\"use strict\";\r\nconst React = __webpack_require__(7);\r\nconst Todo = ({ isDone, text, onClick, remove }) => (React.createElement(\"li\", {className: \"list-group-item\", style: isDone ? { textDecoration: \"line-through\" } : {}, onClick: e => {\r\n    e.preventDefault();\r\n    onClick();\r\n}}, \r\n    text, \r\n    React.createElement(\"button\", {className: \"btn btn-default\", style: { float: \"right\", fontWeight: \"bold\" }, onClick: e => { remove(); }}, \"X\")));\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.default = Todo;\r\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/Components/Todo.tsx\n// module id = 13\n// module chunks = 0\n//# sourceURL=webpack:///./src/Components/Todo.tsx?");
+	eval("\"use strict\";\r\nconst React = __webpack_require__(7);\r\nconst Todo = ({ isDone, text, onClick, remove }) => (React.createElement(\"li\", {className: \"list-group-item\", style: { lineHeight: \"38px\" }, onClick: e => {\r\n    e.preventDefault();\r\n    onClick();\r\n}}, \r\n    React.createElement(\"div\", {style: { width: \"100%\" }}, \r\n        React.createElement(\"span\", {style: isDone ? { textDecoration: \"line-through\" } : {}}, text), \r\n        React.createElement(\"button\", {className: \"btn btn-default\", style: { float: \"right\", fontWeight: \"bold\" }, onClick: e => { remove(); }}, \"X\"))\r\n));\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.default = Todo;\r\n\n\n//////////////////\n// WEBPACK FOOTER\n// ./src/Components/Todo.tsx\n// module id = 13\n// module chunks = 0\n//# sourceURL=webpack:///./src/Components/Todo.tsx?");
 
 /***/ },
 /* 14 */

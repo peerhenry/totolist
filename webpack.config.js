@@ -54,6 +54,7 @@ module.exports = {
     'redux': 'Redux',
     'react-redux': 'ReactRedux',
     'immutable': 'Immutable',
+    'redux-thunk': 'ReduxThunk'
   },
 
   plugins: [new HtmlWebpackPlugin({

@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "buildtests": "webpack --config \"C:/devdummy/totolist/webpack.config.tests.js\"",
+    "buildtests": "webpack --config webpack.config.tests.js",
     "tests": "mocha test/testbundle.js --opts mocha.opts || exit 0",
-    "report": "start chrome \"C:/devdummy/totolist/mochawesome-reports/mochawesome.html\"",
-    "build": "webpack && start chrome \"C:/devdummy/totolist/build/index.html\"",
-    "view": "start chrome \"C:/devdummy/totolist/build/index.html\"",
+    "report": "view.bat mochawesome-reports/mochawesome.html",
+    "build": "webpack && view.bat build/index.html",
+    "view": "view.bat build/index.html",
     "all": "npm run build && npm test",
     "dev": "webpack-dev-server --content-base build --inline --hot",
     "test": "gulp"
@@ -16,14 +16,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
     "bootstrap": "^3.3.7",
+    "immutable": "^3.8.1",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^4.4.6",
     "redux": "^3.6.0",
-    "immutable": "^3.8.1"
+    "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
+    "@types/axios": "^0.9.34",
     "@types/chai": "^3.4.34",
     "@types/enzyme": "^2.5.39",
     "@types/immutable": "^3.8.6",
@@ -32,6 +35,7 @@
     "@types/react-dom": "^0.14.19",
     "@types/react-redux": "^4.4.35",
     "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.32",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-preset-es2015": "^6.18.0",

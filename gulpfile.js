@@ -9,6 +9,7 @@ gulp.task('fetch', function(){
     'node_modules/react-dom/dist/react-dom.min.js',
     'node_modules/redux/dist/redux.min.js',
     'node_modules/react-redux/dist/react-redux.min.js', 
+    'node_modules/redux-thunk/dist/redux-thunk.min.js',
     'node_modules/bootstrap/dist/css/bootstrap.min.css'
     ];
   var destination = 'build/libs/';

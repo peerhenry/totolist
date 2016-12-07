@@ -2,7 +2,9 @@ import * as React from 'react'
 import {render} from 'react-dom'
 import {createStore} from 'redux'
 import {Store} from 'redux'
+import {applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
+import thunk from 'redux-thunk'
 
 import {Map} from 'immutable'
 import {List} from 'immutable'
@@ -27,7 +29,8 @@ const startingState = Map({
   visibilityFilter: "SHOW_ALL"
 })
 
-const store: Store<{}> = createStore(reducer, startingState)
+const middleWare = applyMiddleware(thunk)
+const store: Store<{}> = createStore(reducer, startingState, middleWare)
 
 const App = () => (
   <div>
