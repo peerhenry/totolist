@@ -1,7 +1,7 @@
 import {connect} from 'react-redux'
-import {add} from 'actions'
-import {requestTodos} from 'actions'
-import Form from 'components/Form'
+import {add} from 'todos/TodoActions'
+import {requestTodos} from 'todos/TodoActions'
+import Form from './Form'
 
 let todoInput;
 

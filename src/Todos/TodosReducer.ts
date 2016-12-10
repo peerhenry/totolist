@@ -1,6 +1,6 @@
 import {List} from 'immutable'
-import TodoModel from 'models/TodoModel'
-import {CreateTodoModel} from 'models/Factory'
+import TodoModel from 'todos/TodoModel'
+import {CreateTodoModel} from 'todos/TodoModelFactory'
 
 const ToggleReducer = (todo: TodoModel, action: any): TodoModel => {
   return (action.id === todo.id) ? {id: todo.id, text: todo.text, isDone: !todo.isDone} : todo

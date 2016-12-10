@@ -9,12 +9,12 @@ import thunk from 'redux-thunk'
 import {Map} from 'immutable'
 import {List} from 'immutable'
 
-import Title from 'components/Title'
-import FormContainer from 'containers/FormContainer'
-import TodoListContainer from 'containers/TodoListContainer'
-import reducer from 'reducers/Root'
-import TodoModel from 'models/TodoModel'
-import {CreateTodoModel} from 'models/Factory'
+import Title from 'page/Title'
+import FormContainer from 'form/FormContainer'
+import TodoListContainer from 'todos/TodoListContainer'
+import reducer from './RootReducer'
+import TodoModel from 'todos/TodoModel'
+import {CreateTodoModel} from 'todos/TodoModelFactory'
 
 const startingState = Map({
   todos: List<TodoModel>([

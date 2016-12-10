@@ -1,4 +1,4 @@
-import TodoModel from 'models/TodoModel'
+import TodoModel from './TodoModel'
 
 let currentId = 1
 

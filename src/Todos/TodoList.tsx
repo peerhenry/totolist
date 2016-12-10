@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {List} from 'immutable'
-import Todo from 'components/Todo'
-import TodoModel from 'models/TodoModel'
+import Todo from './Todo'
+import TodoModel from './TodoModel'
 
 const TodoList = ({todos, onClick, remove}) => {
   return (

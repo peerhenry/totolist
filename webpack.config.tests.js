@@ -14,11 +14,9 @@ module.exports = {
     extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.ts', '.tsx'],
     root: path.resolve(__dirname),
     alias: {
-      containers: 'src/Containers',
-      reducers: 'src/Reducers',
-      components: 'src/Components',
-      actions: 'src/Actions/Actions',
-      models: 'src/Models'
+      form: 'src/Form',
+      page: 'src/Page',
+      todos: 'src/Todos'
     }
   },
 

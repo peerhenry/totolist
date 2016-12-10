@@ -1,9 +1,9 @@
 import {connect} from 'react-redux'
 import {List} from 'immutable'
-import TodoModel from 'models/TodoModel'
-import TodoList from 'components/TodoList'
-import {toggle} from 'actions'
-import {remove} from 'actions'
+import TodoModel from './TodoModel'
+import TodoList from './TodoList'
+import {toggle} from './TodoActions'
+import {remove} from './TodoActions'
 
 const mapStateToProps = function(state){
   return {
